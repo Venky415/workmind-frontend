@@ -1,4 +1,4 @@
-const BASE = 'https://workmind-backend-production.up.railway.app/api';
+const BASE = 'https://workmind-backend-c2ls.onrender.com/api';
 
 export const userContext = {
   name: 'Rahul Kumar', employeeId: 'EMP-10042',
