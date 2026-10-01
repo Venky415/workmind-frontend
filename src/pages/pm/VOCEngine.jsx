@@ -96,7 +96,7 @@ export default function VOCEngine() {
   const run = async (useDemo = false) => {
     setLoading(true); setError(''); setResult(null);
     try {
-      const res = await fetch('https://workmind-backend-production.up.railway.app/api/pm/voc', {
+      const res = await fetch('https://workmind-backend-c2ls.onrender.com/api/pm/voc', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ feedbackText: feedback, source: 'mixed', dateRange: '90 days', useDemo })

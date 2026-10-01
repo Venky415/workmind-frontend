@@ -45,7 +45,7 @@ export default function PRDWriter() {
   const run = async () => {
     setLoading(true); setError(''); setResult(null);
     try {
-      const res = await fetch('https://workmind-backend-production.up.railway.app/api/pm/prd', {
+      const res = await fetch('https://workmind-backend-c2ls.onrender.com/api/pm/prd', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)

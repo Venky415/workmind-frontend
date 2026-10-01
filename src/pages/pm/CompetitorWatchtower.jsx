@@ -106,7 +106,7 @@ export default function CompetitorWatchtower() {
   const run = async (useDemo = false) => {
     setLoading(true); setError(''); setResult(null);
     try {
-      const res = await fetch('https://workmind-backend-production.up.railway.app/api/pm/watchtower', {
+      const res = await fetch('https://workmind-backend-c2ls.onrender.com/api/pm/watchtower', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ competitors: useDemo ? [] : competitors.filter(c => c.name), useDemo })
