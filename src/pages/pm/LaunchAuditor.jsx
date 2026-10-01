@@ -97,6 +97,7 @@ export default function LaunchAuditor() {
     setLoading(true); setError(''); setResult(null);
     try {
       const res = await fetch('https://workmind-backend-c2ls.onrender.com/api/pm/audit', {
+      signal: AbortSignal.timeout(120000),
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ documents: docs.filter(d => d.content), featureName, releaseVersion: '', useDemo })
